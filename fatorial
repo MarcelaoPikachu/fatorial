@@ -1,0 +1,33 @@
+package Ajuda;
+import java.util.Scanner;
+
+public class Ajuda {
+
+	public Ajuda() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+		int n; //variavel que recebe o numero digitado
+		int i = 1;
+		int j = 0;
+		int k = 0;
+		System.out.println("Digite o número:");
+		Scanner in = new Scanner( System.in );
+		n = in.nextInt();
+		j = n;
+		
+	
+		do{
+			i = i + (i*(n-1));
+			n--;
+		}while(n>0);
+		
+		System.out.println("Fatorial = "+ i);
+       
+		
+
+	}
+
+}
